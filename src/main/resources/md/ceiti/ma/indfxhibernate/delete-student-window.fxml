@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="md.ceiti.ma.indfxhibernate.controller.DeleteController"
+            prefHeight="200.0" prefWidth="300.0" styleClass="mainvbox">
+    <VBox spacing="10" alignment="CENTER" maxWidth="200">
+        <Label fx:id="label" text="IDNP-ul Studentului:" styleClass="label" />
+        <TextField fx:id="tf" prefWidth="170"  />
+    </VBox>
+    <HBox style="-fx-padding: 15px 0 0 0;" styleClass="hbox" >
+        <Button fx:id="del" text="Șterge" onAction="#handleDelete" styleClass="del-btn" />
+        <Button fx:id="close" text="Închide" onAction="#handleClose" styleClass="cancel-btn" />
+    </HBox>
+</VBox>

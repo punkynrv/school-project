@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/Scoala</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">9642</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.format_sql">true</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+
+    <mapping class="md.ceiti.ma.indfxhibernate.model.entities.Bursier"/>
+    <mapping class="md.ceiti.ma.indfxhibernate.model.entities.Catedra"/>
+    <mapping class="md.ceiti.ma.indfxhibernate.model.entities.Exmatriculat"/>
+    <mapping class="md.ceiti.ma.indfxhibernate.model.entities.Grupa"/>
+    <mapping class="md.ceiti.ma.indfxhibernate.model.entities.Media"/>
+    <mapping class="md.ceiti.ma.indfxhibernate.model.entities.Profesor"/>
+    <mapping class="md.ceiti.ma.indfxhibernate.model.entities.Student"/>
+  </session-factory>
+</hibernate-configuration>

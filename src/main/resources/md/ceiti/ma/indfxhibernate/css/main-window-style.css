@@ -1,0 +1,96 @@
+.border-pane{
+    -fx-padding: 0;
+}
+
+.menu-bar {
+    -fx-background-color: #95cfff;
+    -fx-alignment: center-right;
+    -fx-pref-height: 50px;
+    -fx-padding: 0;
+    -fx-margin: 0;
+}
+
+
+.menu-item {
+    -fx-background-color: #95cfff;
+    -fx-alignment: center;
+    -fx-padding: 5px 10px;
+    -fx-border-width: 0;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-padding: 0;
+    -fx-font-size: 16px;
+}
+
+.menu-item:hover {
+    -fx-background-color: #2c338a;
+}
+
+.menu-item {
+    -fx-background-color: #21257c;
+    -fx-alignment: center;
+    -fx-padding: 5px 10px;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-padding: 0;
+    -fx-font-size: 16px;
+}
+
+
+.menu-item:hover {
+    -fx-background-color: #2c338a;
+}
+
+.table-view .column-header {
+    -fx-background-color: #0080ff;
+    -fx-pref-height: 40px;
+    -fx-padding: 0;
+    -fx-margin: 0;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-padding: 0;
+}
+
+.table-view .cell{
+    -fx-text-fill: #0080ff;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+    -fx-font-family: "Consolas";
+    -fx-padding: 0;
+    -fx-background-color: white;
+    -fx-pref-height: 40px;
+
+}
+
+.table-view .table-row-cell {
+    -fx-border-color: #0080ff;
+    -fx-border-width: 0.5px;
+    -fx-border-style: solid;
+}
+
+
+.side-panel {
+    -fx-background-color: #0080ff;
+    -fx-padding: 10px 25px;
+}
+
+.vertical-letter {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}

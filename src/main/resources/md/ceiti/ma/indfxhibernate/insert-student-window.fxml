@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="md.ceiti.ma.indfxhibernate.controller.InsertController"
+      prefHeight="500.0" prefWidth="800.0" styleClass="vbox">
+
+    <Label text="Inserare Student" styleClass="mainLabel" />
+
+    <VBox spacing="10" alignment="CENTER" maxWidth="200">
+        <Label text="IDNP:" styleClass="label" />
+        <TextField fx:id="idnpField" style="-fx-pref-width: 150px; -fx-pref-height: 30px;" />
+    </VBox>
+
+    <HBox styleClass="hbox">
+        <VBox styleClass="vboxhbox">
+            <Label text="Nume:" styleClass="label" />
+            <TextField fx:id="numeField" styleClass="longtf" />
+        </VBox>
+        <VBox styleClass="vboxhbox">
+            <Label text="Prenume:" styleClass="label" />
+            <TextField fx:id="prenumeField" styleClass="longtf" />
+        </VBox>
+    </HBox>
+
+    <Label text="Grupa:" styleClass="label" />
+    <ComboBox fx:id="grupeComboBox" styleClass="combo-box" />
+
+    <HBox styleClass="hbox">
+        <VBox styleClass="vboxhbox">
+            <Label text="Media:" styleClass="label" />
+            <TextField fx:id="mediaField" styleClass="text-field" />
+        </VBox>
+        <VBox styleClass="vboxhbox">
+            <Label text="AbsențeN:" styleClass="label" />
+            <Spinner fx:id="nemotivSpinner" styleClass="spinner" />
+        </VBox>
+        <VBox styleClass="vboxhbox">
+            <Label text="AbsențeM:" styleClass="label" />
+            <Spinner fx:id="motivSpinner" styleClass="spinner" />
+        </VBox>
+    </HBox>
+
+    <HBox styleClass="hbox" style="-fx-padding: 15px 0 0 0;">
+        <Button text="Adaugă" onAction="#addStudentAction" styleClass="add-btn" />
+        <Button text="Anulează" onAction="#cancelAction" styleClass="cancel-btn" />
+    </HBox>
+</VBox>

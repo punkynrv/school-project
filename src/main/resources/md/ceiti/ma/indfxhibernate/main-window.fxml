@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="md.ceiti.ma.indfxhibernate.controller.Controller"
+            styleClass="border-pane">
+
+    <left>
+        <VBox alignment="CENTER" styleClass="side-panel">
+            <Label text="Ș" styleClass="vertical-letter"/>
+            <Label text="C" styleClass="vertical-letter"/>
+            <Label text="O" styleClass="vertical-letter"/>
+            <Label text="A" styleClass="vertical-letter"/>
+            <Label text="L" styleClass="vertical-letter"/>
+            <Label text="A" styleClass="vertical-letter"/>
+        </VBox>
+    </left>
+
+    <top>
+        <MenuBar styleClass="menu-bar">
+            <Menu styleClass="menu">
+                <graphic>
+                    <ImageView fitHeight="40" fitWidth="40" preserveRatio="true" smooth="true" cache="true">
+                        <Image url="file:src/main/resources/images/stud.png" />
+                    </ImageView>
+                </graphic>
+                <items>
+                    <MenuItem styleClass="menu-item" text="Inserare" onAction="#openInsertWindow" />
+                    <MenuItem styleClass="menu-item" text="Studenți Actuali" onAction="#showStudentiActuali" />
+                    <MenuItem styleClass="menu-item" text="Restanțieri" onAction="#showRestantieri" />
+                    <MenuItem styleClass="menu-item" text="St. Exmatriculați" onAction="#showExmatriculati" />
+                    <MenuItem styleClass="menu-item" text="Reușite" onAction="#showReusite" />
+                    <MenuItem styleClass="menu-item" text="Reușite - BEST" onAction="#showReusiteBest" />
+                    <MenuItem styleClass="menu-item" text="Studenți Bursieri" onAction="#showBursieri" />
+                    <MenuItem styleClass="menu-item" text="Exmatriculare" onAction="#openDeleteWindow" />
+                </items>
+            </Menu>
+            <Menu styleClass="menu">
+                <graphic>
+                    <ImageView fitHeight="40" fitWidth="40" preserveRatio="true" smooth="true" cache="true">
+                        <Image url="file:src/main/resources/images/grupe.png" />
+                    </ImageView>
+                </graphic>
+                <items>
+                    <MenuItem styleClass="menu-item" text="Grupe" onAction="#showGrupe" />
+                    <MenuItem styleClass="menu-item" text="Media per Grupă" onAction="#showMediaGr" />
+                    <MenuItem styleClass="menu-item" text="Absențe per Grupă" onAction="#showAbsenteGr" />
+                </items>
+            </Menu>
+            <Menu styleClass="menu">
+                <graphic>
+                    <ImageView fitHeight="40" fitWidth="40" preserveRatio="true" smooth="true" cache="true">
+                        <Image url="file:src/main/resources/images/file.png" />
+                    </ImageView>
+                </graphic>
+                <items>
+                    <MenuItem styleClass="menu-item" text="Cea mai mică medie" onAction="#exportDataSmall" />
+                    <MenuItem styleClass="menu-item" text="Cea mai mare medie" onAction="#exportDataBig" />
+                    <MenuItem styleClass="menu-item" text="Medii Studenți" onAction="#exportDataStudenti" />
+                </items>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TableView fx:id="tabel" />
+    </center>
+</BorderPane>
