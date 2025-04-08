@@ -109,7 +109,7 @@ INSERT INTO Profesori (IdP, IDNP, Nume, Prenume, Salariu, IdCatedra) VALUES
 (30, '6234567890127', 'Polucci', 'Tatiana', 28000, 6);
 
 
-INSERT INTO Grupe VALUES
+INSERT INTO Grupe (IdG, NumeG, AnAdm, IdDir) VALUES
 (1, 'P-2141', 2021, 21),
 (2, 'B-2141', 2021, 11),
 (3, 'S-2232', 2022, 6),
